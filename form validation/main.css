@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(./img/contact-us_540x_f09f05db-24f8-4f55-9f0c-4277ed2adb92.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.hiddenclass{
+    width: 600px;
+    background-color: rgb(138, 109, 237);
+    border: solid white 2px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: none;
+    animation-name: box;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes box{
+   from{
+    height: 0px;
+    }
+    to{
+        height: 500px;
+    }
+}
+
+.newboxclass{
+    width: 600px;
+    background-color: rgb(138, 109, 237);
+    border: solid white 2px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    animation-name: removebox;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes removebox{
+    from{
+     height: 500px;
+     }
+     to{
+         height: 0px;
+     }
+ }
+ 
+.hiddentext{
+    display: none;
+}
+
+.hiddenbtn{
+    display: none;
+}
+
+.ptext{
+    display: block;
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+    font-size: 25px;
+    animation-name: opacityanimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.btnclass{
+    display: block;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 90px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: opacityanimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes opacityanimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.btnclass:hover{
+    cursor: pointer;
+    animation-name: donebtn;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes donebtn{
+    100%{
+    background-color: rgb(47, 48, 48);
+    color: white;
+    }
+}
+
+.main-class{
+    border: solid white 2px;
+    border-radius: 10px;
+    background-color: rgba(132,106,221,.8);
+    width: 700px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.form-container{
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+}
+
+.title{
+    color: rgb(219, 219, 219);
+    text-align: center;
+    margin-top: 10px;
+}
+.form-class{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=email], textarea{
+    width: 60%;
+    margin: auto;
+    margin-top: 45px;
+}
+
+.Fname{
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.Lname{
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+input[type=text],input[type=email]{
+    background: none;
+    border: none;
+    border-bottom: solid rgb(219, 219, 219) 2px;
+    padding-left: 30px;
+    color: white;
+}
+
+input[type=text]:focus, input[type=email]:focus{
+  outline: none;
+  color:  white;
+}
+
+input[type=text]::placeholder, input[type=email]::placeholder{
+    color: lightgray;
+    font-size: 15px;
+  
+}
+
+#Ficon{
+    color: white;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 46px;
+    z-index: 1;
+}
+
+#Licon{
+    color: white;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 114px;
+    z-index: 1;
+}
+
+
+#Eicon{
+    color: white;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 176px;
+    z-index: 1;
+}
+
+input[type=submit]{
+    width: 20%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    animation-name: submithover;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes submithover{
+    100%{
+    background-color: rgb(47, 48, 48);
+    color: white;
+    }
+}
+
+textarea{
+    border-radius: 13px;
+    padding-left: 5px;
+    padding-top: 5px;
+   
+}
+
+textarea:focus{
+    outline: none;
+}
+
+textarea::placeholder{
+    padding-left: 10px;
+}
+
+input[type=file]{
+    margin: auto;
+    margin-top: 15px;
+    color: white;
+}
+
+/*mobile devices*/
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .main-class{
+        width: 300px;
+    }
+
+    #Ficon{
+        margin-left: 50px;
+    }
+    
+    #Licon{
+        margin-left: 50px;
+    }
+    
+    
+    #Eicon{
+        margin-left: 50px;
+    }
+
+    input[type=file]{
+      margin-left: 60px;
+    }
+
+    input[type=submit]{
+        width: 40%;
+    }
+
+    .hiddenclass{
+    width: 280px;
+     top: 460px;
+    }
+    
+   .newboxclass{
+    width: 280px;
+    top: 460px;
+   }
+
+
+.btnclass{
+    width: 90px;
+    height: 50px;
+    top: 60%;
+}
+
+}
+
+/*ipads, tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .main-class{
+        width: 450px;
+    }
+
+    #Ficon{
+        margin-left: 80px;
+    }
+    
+    #Licon{
+        margin-left: 80px;
+    }
+    
+    
+    #Eicon{
+        margin-left: 80px;
+    }
+
+    input[type=file]{
+      margin-left: 120px;
+    }
+
+    input[type=submit]{
+        width: 35%;
+    }
+
+    .hiddenclass{
+    width: 400px;
+     top: 460px;
+    }
+    
+   .newboxclass{
+    width: 400px;
+    top: 460px;
+   }
+
+
+.btnclass{
+    width: 90px;
+    height: 50px;
+    top: 60%;
+}
+
+}
+
+/*laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+   
+    .hiddenclass{
+     top: 460px;
+    }
+    
+   .newboxclass{
+
+    top: 460px;
+   }
+
+}
+
+/*large screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+   
+    .hiddenclass{
+     top: 460px;
+    }
+    
+   .newboxclass{
+
+    top: 460px;
+   }
+
+}
+
+/*large screens*/
+@media only screen and (min-width: 1201px){
+   
+    .hiddenclass{
+     top: 460px;
+    }
+    
+   .newboxclass{
+
+    top: 460px;
+   }
+
+}
