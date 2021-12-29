@@ -50,7 +50,6 @@ function validate() {
             comments.style.borderBottom = "solid white 2px"
         }
     }else{
-          localStorage.setItem("firstname", firstName.value);
            boxDiv.style.display = "block";
            setTimeout(() => {
                let text = document.getElementById("p_text");
