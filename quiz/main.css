@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(48, 50, 51);
+}
+
+.mainclass{
+    background-color: rgb( 0, 31, 63);
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 3px;
+}
+
+.content{
+    display: none;
+}
+
+.newcontent{
+    width: 60%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+
+
+#question{
+    width: 90%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 150px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.startbtn{
+    border: none;
+    width: 100px;
+    border-radius: 50%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.startbtn:hover{
+    cursor: pointer;
+}
+
+.retrybtn{
+    display: none;
+}
+
+.newretrybtn{
+    display: block;
+    border: none;
+    width: 100px;
+    border-radius: 50%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.newretrybtn:hover{
+    cursor: pointer;
+}
+
+span{
+    padding-left: 20px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+.oldhiddenclass{
+    display: none;
+}
+.hiddencontentclass{
+    display: block;
+}
+
+label{
+    cursor: pointer;
+}
+
+#score{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
