@@ -5,4 +5,4 @@
 2. Quiz game
 
 ###
-3. slider
+3. Slider
